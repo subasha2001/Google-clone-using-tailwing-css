@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./output.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="flex justify-between px-5 py-2">
+    <div class="flex p-3 space-x-5 text-sm items-center">
+      <a class="hover:underline" href="#">About</a>
+      <a class="hover:underline" href="#">Store</a>
+    </div>
+    <div class="flex space-x-5 text-sm items-center">
+      <a class="hover:underline" href="#">Gmail</a>
+      <a class="hover:underline" href="#">Images</a>
+      <div class="p-2 hover:bg-slate-200 hover:rounded-full">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M4 2C5.10457 2 6 2.89543 6 4C6 5.10457 5.10457 6 4 6C2.89543 6 2 5.10457 2 4C2 2.89543 2.89543 2 4 2ZM12 2C13.1046 2 14 2.89543 14 4C14 5.10457 13.1046 6 12 6C10.8954 6 10 5.10457 10 4C10 2.89543 10.8954 2 12 2ZM22 4C22 2.89543 21.1046 2 20 2C18.8954 2 18 2.89543 18 4C18 5.10457 18.8954 6 20 6C21.1046 6 22 5.10457 22 4ZM4 10C5.10457 10 6 10.8954 6 12C6 13.1046 5.10457 14 4 14C2.89543 14 2 13.1046 2 12C2 10.8954 2.89543 10 4 10ZM14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14C13.1046 14 14 13.1046 14 12ZM20 10C21.1046 10 22 10.8954 22 12C22 13.1046 21.1046 14 20 14C18.8954 14 18 13.1046 18 12C18 10.8954 18.8954 10 20 10ZM6 20C6 18.8954 5.10457 18 4 18C2.89543 18 2 18.8954 2 20C2 21.1046 2.89543 22 4 22C5.10457 22 6 21.1046 6 20ZM12 18C13.1046 18 14 18.8954 14 20C14 21.1046 13.1046 22 12 22C10.8954 22 10 21.1046 10 20C10 18.8954 10.8954 18 12 18ZM22 20C22 18.8954 21.1046 18 20 18C18.8954 18 18 18.8954 18 20C18 21.1046 18.8954 22 20 22C21.1046 22 22 21.1046 22 20Z"
+            fill="#000000" />
+        </svg>
+      </div>
+      <button class="bg-blue-600 text-white p-2 rounded-2xl font-medium hover:shadow-lg">
+        Sign In
+      </button>
+    </div>
+  </div>
+
+  <div class="flex justify-center mt-28">
+    <img class="w-50 h-20" src="../images/googlelogo.png" alt="" />
+  </div>
+
+  <div class="flex justify-center mt-5">
+    <div
+      class="flex justify-around border-2 border-gray-200 p-2 px-4 items-center rounded-full gap-4 hover:drop-shadow w-full md:w-1/3 mx-5">
+      <svg class="h-7 w-7 fill-gray-400" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path
+          d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+        </path>
+      </svg>
+      <div class="w-full">
+        <input id="searchBox" class="outline-0 bg-inherit" type="text" />
+      </div>
+      <svg class="h-8 w-8" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#4285f4"
+          d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z">
+        </path>
+        <path fill="#34a853" d="m11 18.08h2v3.92h-2z"></path>
+        <path fill="#fbbc04"
+          d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z"></path>
+        <path fill="#ea4335"
+          d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z">
+        </path>
+      </svg>
+      <svg class="h-8 w-8" focusable="false" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
+        <rect fill="none" height="192" width="192"></rect>
+        <g>
+          <circle fill="#34a853" cx="144.07" cy="144" r="16"></circle>
+          <circle fill="#4285f4" cx="96.07" cy="104" r="24"></circle>
+          <path fill="#ea4335"
+            d="M24,135.2c0,18.11,14.69,32.8,32.8,32.8H96v-16l-40.1-0.1c-8.8,0-15.9-8.19-15.9-17.9v-18H24V135.2z"></path>
+          <path fill="#fbbc04" d="M168,72.8c0-18.11-14.69-32.8-32.8-32.8H116l20,16c8.8,0,16,8.29,16,18v30h16V72.8z">
+          </path>
+          <path fill="#4285f4"
+            d="M112,24l-32,0L68,40H56.8C38.69,40,24,54.69,24,72.8V92h16V74c0-9.71,7.2-18,16-18h80L112,24z"></path>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <div id="resultList" class="hidden flex justify-center">
+    <div class="w-full md:w-1/3 mx-5 shadow">
+      <div class="p-3">
+        <span class="text-gray-500">Trending Searches</span>
+      </div>
+      <ul>
+        <li class="flex gap-3 p-2 items-center hover:bg-gray-100">
+          <svg class="h-6 w-6 fill-gray-100" viewBox="0 -0.5 25 25" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M15.5 7.75C15.0858 7.75 14.75 8.08579 14.75 8.5C14.75 8.91421 15.0858 9.25 15.5 9.25V7.75ZM19.5 9.25C19.9142 9.25 20.25 8.91421 20.25 8.5C20.25 8.08579 19.9142 7.75 19.5 7.75V9.25ZM20.25 8.5C20.25 8.08579 19.9142 7.75 19.5 7.75C19.0858 7.75 18.75 8.08579 18.75 8.5H20.25ZM18.75 12.5C18.75 12.9142 19.0858 13.25 19.5 13.25C19.9142 13.25 20.25 12.9142 20.25 12.5H18.75ZM20.0303 9.03033C20.3232 8.73744 20.3232 8.26256 20.0303 7.96967C19.7374 7.67678 19.2626 7.67678 18.9697 7.96967L20.0303 9.03033ZM12.5 15.5L11.9697 16.0303C12.2626 16.3232 12.7374 16.3232 13.0303 16.0303L12.5 15.5ZM9.5 12.5L10.0303 11.9697C9.73744 11.6768 9.26256 11.6768 8.96967 11.9697L9.5 12.5ZM4.96967 15.9697C4.67678 16.2626 4.67678 16.7374 4.96967 17.0303C5.26256 17.3232 5.73744 17.3232 6.03033 17.0303L4.96967 15.9697ZM15.5 9.25H19.5V7.75H15.5V9.25ZM18.75 8.5V12.5H20.25V8.5H18.75ZM18.9697 7.96967L11.9697 14.9697L13.0303 16.0303L20.0303 9.03033L18.9697 7.96967ZM13.0303 14.9697L10.0303 11.9697L8.96967 13.0303L11.9697 16.0303L13.0303 14.9697ZM8.96967 11.9697L4.96967 15.9697L6.03033 17.0303L10.0303 13.0303L8.96967 11.9697Z"
+              fill="#808080" />
+          </svg>
+          <a href="">presidential election</a>
+        </li>
+        <li class="flex gap-3 p-2 items-center hover:bg-gray-100">
+          <svg class="h-6 w-6" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M15.5 7.75C15.0858 7.75 14.75 8.08579 14.75 8.5C14.75 8.91421 15.0858 9.25 15.5 9.25V7.75ZM19.5 9.25C19.9142 9.25 20.25 8.91421 20.25 8.5C20.25 8.08579 19.9142 7.75 19.5 7.75V9.25ZM20.25 8.5C20.25 8.08579 19.9142 7.75 19.5 7.75C19.0858 7.75 18.75 8.08579 18.75 8.5H20.25ZM18.75 12.5C18.75 12.9142 19.0858 13.25 19.5 13.25C19.9142 13.25 20.25 12.9142 20.25 12.5H18.75ZM20.0303 9.03033C20.3232 8.73744 20.3232 8.26256 20.0303 7.96967C19.7374 7.67678 19.2626 7.67678 18.9697 7.96967L20.0303 9.03033ZM12.5 15.5L11.9697 16.0303C12.2626 16.3232 12.7374 16.3232 13.0303 16.0303L12.5 15.5ZM9.5 12.5L10.0303 11.9697C9.73744 11.6768 9.26256 11.6768 8.96967 11.9697L9.5 12.5ZM4.96967 15.9697C4.67678 16.2626 4.67678 16.7374 4.96967 17.0303C5.26256 17.3232 5.73744 17.3232 6.03033 17.0303L4.96967 15.9697ZM15.5 9.25H19.5V7.75H15.5V9.25ZM18.75 8.5V12.5H20.25V8.5H18.75ZM18.9697 7.96967L11.9697 14.9697L13.0303 16.0303L20.0303 9.03033L18.9697 7.96967ZM13.0303 14.9697L10.0303 11.9697L8.96967 13.0303L11.9697 16.0303L13.0303 14.9697ZM8.96967 11.9697L4.96967 15.9697L6.03033 17.0303L10.0303 13.0303L8.96967 11.9697Z"
+              fill="#808080" />
+          </svg>
+          <a href="">unified pension schemes</a>
+        </li>
+        <li class="flex gap-3 p-2 items-center hover:bg-gray-100">
+          <svg class="h-6 w-6" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M15.5 7.75C15.0858 7.75 14.75 8.08579 14.75 8.5C14.75 8.91421 15.0858 9.25 15.5 9.25V7.75ZM19.5 9.25C19.9142 9.25 20.25 8.91421 20.25 8.5C20.25 8.08579 19.9142 7.75 19.5 7.75V9.25ZM20.25 8.5C20.25 8.08579 19.9142 7.75 19.5 7.75C19.0858 7.75 18.75 8.08579 18.75 8.5H20.25ZM18.75 12.5C18.75 12.9142 19.0858 13.25 19.5 13.25C19.9142 13.25 20.25 12.9142 20.25 12.5H18.75ZM20.0303 9.03033C20.3232 8.73744 20.3232 8.26256 20.0303 7.96967C19.7374 7.67678 19.2626 7.67678 18.9697 7.96967L20.0303 9.03033ZM12.5 15.5L11.9697 16.0303C12.2626 16.3232 12.7374 16.3232 13.0303 16.0303L12.5 15.5ZM9.5 12.5L10.0303 11.9697C9.73744 11.6768 9.26256 11.6768 8.96967 11.9697L9.5 12.5ZM4.96967 15.9697C4.67678 16.2626 4.67678 16.7374 4.96967 17.0303C5.26256 17.3232 5.73744 17.3232 6.03033 17.0303L4.96967 15.9697ZM15.5 9.25H19.5V7.75H15.5V9.25ZM18.75 8.5V12.5H20.25V8.5H18.75ZM18.9697 7.96967L11.9697 14.9697L13.0303 16.0303L20.0303 9.03033L18.9697 7.96967ZM13.0303 14.9697L10.0303 11.9697L8.96967 13.0303L11.9697 16.0303L13.0303 14.9697ZM8.96967 11.9697L4.96967 15.9697L6.03033 17.0303L10.0303 13.0303L8.96967 11.9697Z"
+              fill="#808080" />
+          </svg>
+          <a href="">private helicopter crashes in pune</a>
+        </li>
+        <li class="flex gap-3 p-2 items-center hover:bg-gray-100">
+          <svg class="h-6 w-6" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M15.5 7.75C15.0858 7.75 14.75 8.08579 14.75 8.5C14.75 8.91421 15.0858 9.25 15.5 9.25V7.75ZM19.5 9.25C19.9142 9.25 20.25 8.91421 20.25 8.5C20.25 8.08579 19.9142 7.75 19.5 7.75V9.25ZM20.25 8.5C20.25 8.08579 19.9142 7.75 19.5 7.75C19.0858 7.75 18.75 8.08579 18.75 8.5H20.25ZM18.75 12.5C18.75 12.9142 19.0858 13.25 19.5 13.25C19.9142 13.25 20.25 12.9142 20.25 12.5H18.75ZM20.0303 9.03033C20.3232 8.73744 20.3232 8.26256 20.0303 7.96967C19.7374 7.67678 19.2626 7.67678 18.9697 7.96967L20.0303 9.03033ZM12.5 15.5L11.9697 16.0303C12.2626 16.3232 12.7374 16.3232 13.0303 16.0303L12.5 15.5ZM9.5 12.5L10.0303 11.9697C9.73744 11.6768 9.26256 11.6768 8.96967 11.9697L9.5 12.5ZM4.96967 15.9697C4.67678 16.2626 4.67678 16.7374 4.96967 17.0303C5.26256 17.3232 5.73744 17.3232 6.03033 17.0303L4.96967 15.9697ZM15.5 9.25H19.5V7.75H15.5V9.25ZM18.75 8.5V12.5H20.25V8.5H18.75ZM18.9697 7.96967L11.9697 14.9697L13.0303 16.0303L20.0303 9.03033L18.9697 7.96967ZM13.0303 14.9697L10.0303 11.9697L8.96967 13.0303L11.9697 16.0303L13.0303 14.9697ZM8.96967 11.9697L4.96967 15.9697L6.03033 17.0303L10.0303 13.0303L8.96967 11.9697Z"
+              fill="#808080" />
+          </svg>
+          <a href="">bangladeshi viral video</a>
+        </li>
+        <li class="flex gap-3 p-2 items-center hover:bg-gray-100">
+          <svg class="h-6 w-6" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M15.5 7.75C15.0858 7.75 14.75 8.08579 14.75 8.5C14.75 8.91421 15.0858 9.25 15.5 9.25V7.75ZM19.5 9.25C19.9142 9.25 20.25 8.91421 20.25 8.5C20.25 8.08579 19.9142 7.75 19.5 7.75V9.25ZM20.25 8.5C20.25 8.08579 19.9142 7.75 19.5 7.75C19.0858 7.75 18.75 8.08579 18.75 8.5H20.25ZM18.75 12.5C18.75 12.9142 19.0858 13.25 19.5 13.25C19.9142 13.25 20.25 12.9142 20.25 12.5H18.75ZM20.0303 9.03033C20.3232 8.73744 20.3232 8.26256 20.0303 7.96967C19.7374 7.67678 19.2626 7.67678 18.9697 7.96967L20.0303 9.03033ZM12.5 15.5L11.9697 16.0303C12.2626 16.3232 12.7374 16.3232 13.0303 16.0303L12.5 15.5ZM9.5 12.5L10.0303 11.9697C9.73744 11.6768 9.26256 11.6768 8.96967 11.9697L9.5 12.5ZM4.96967 15.9697C4.67678 16.2626 4.67678 16.7374 4.96967 17.0303C5.26256 17.3232 5.73744 17.3232 6.03033 17.0303L4.96967 15.9697ZM15.5 9.25H19.5V7.75H15.5V9.25ZM18.75 8.5V12.5H20.25V8.5H18.75ZM18.9697 7.96967L11.9697 14.9697L13.0303 16.0303L20.0303 9.03033L18.9697 7.96967ZM13.0303 14.9697L10.0303 11.9697L8.96967 13.0303L11.9697 16.0303L13.0303 14.9697ZM8.96967 11.9697L4.96967 15.9697L6.03033 17.0303L10.0303 13.0303L8.96967 11.9697Z"
+              fill="#808080" />
+          </svg>
+          <a href="">hamster kombat daily cipher code july 17</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="flex justify-center mt-5 gap-3">
+    <button class="bg-gray-50 p-2 px-4 hover:outline outline-gray-300 outline-1 rounded text-sm hover:shadow-md">
+      Google Search
+    </button>
+    <button class="bg-gray-50 p-2 px-4 hover:outline outline-gray-300 outline-1 rounded text-sm hover:shadow-md">
+      I'm Feeling Lucky
+    </button>
+  </div>
+
+  <div class="flex justify-center gap-3 text-sm mx-3 mt-10">
+    <span class="w-36 md:w-28">Google offered in:</span>
+    <div class="flex gap-2 justify-center flex-wrap text-blue-800">
+      <a class="hover:underline" href="">हिन्दी</a>
+      <a class="hover:underline" href="">বাংলা</a>
+      <a class="hover:underline" href="">తెలుగు</a>
+      <a class="hover:underline" href="">मराठी</a>
+      <a class="hover:underline" href="">தமிழ்</a>
+      <a class="hover:underline" href="">ગુજરાતી</a>
+      <a class="hover:underline" href="">ಕನ್ನಡ</a>
+      <a class="hover:underline" href="">മലയാളം</a>
+      <a class="hover:underline" href="">ਪੰਜਾਬੀ</a>
+    </div>
+  </div>
+
+  <div class="bottom-0 fixed bg-gray-200 w-full p-3 text-gray-800 pb-0">
+    <div class="p-2 pt-0 border-b border-gray-400">
+      <span>India</span>
+    </div>
+    <div class="flex flex-col md:flex-row justify-between">
+      <div class="p-2 flex justify-center gap-5">
+        <a href="" class="hover:underline">Advertising</a>
+        <a href="" class="hover:underline">Business</a>
+        <a href="" class="hover:underline">How Search Works</a>
+      </div>
+      <div class="p-2 flex justify-center gap-5">
+        <a href="" class="hover:underline">Privacy</a>
+        <a href="" class="hover:underline">Terms</a>
+        <a href="" class="hover:underline">Settings</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.getElementById('searchBox')
+      .onfocus = function () {
+        document.getElementById('resultList')
+          .classList.toggle('hidden');
+      }
+    document.getElementById('searchBox')
+      .onblur = function () {
+        document.getElementById('resultList')
+          .classList.toggle('hidden');
+      }
+  </script>
+</body>
+
+</html>
